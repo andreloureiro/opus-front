@@ -1,6 +1,6 @@
 {
-  "name": "OpusFront",
-  "version": "0.1.0",
+  "name": "Keemple",
+  "version": "0.0.1",
   "devDependencies": {
     "grunt-cli": "latest",
     "grunt-contrib-sass": "latest",
@@ -8,6 +8,8 @@
     "grunt-contrib-connect": "~0.6.0",
     "grunt-contrib-csslint": "~0.2.0",
     "load-grunt-tasks": "~0.2.1",
-    "grunt-autoprefixer": "~0.6.3"
+    "grunt-autoprefixer": "~0.6.3",
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0"
   }
 }

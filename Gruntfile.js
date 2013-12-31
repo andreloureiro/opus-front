@@ -14,16 +14,16 @@ module.exports = function (grunt) {
             }
         },
 
-        sass : {
-            dist : {
-                options : {
-                    style : 'expanded'
-                },
-                files : {
-                    'build/opus-front.css' : ['src/**/**.scss']
-                }
-            }
-        },
+        // sass : {
+        //     dist : {
+        //         options : {
+        //             style : 'expanded'
+        //         },
+        //         files : {
+        //             'build/opus-front.css' : ['src/**/**.scss']
+        //         }
+        //     }
+        // },
 
         autoprefixer: {
             dist: {
@@ -53,12 +53,19 @@ module.exports = function (grunt) {
                     livereload : true
                 }
             }
+        },
+
+        concat : {
+            dist : {
+                src : ['src/intro.css', 'src/base/base.css', 'src/grid/grid.css'],
+                dest : 'build/keemple.css'
+            }
         }
 
     });
 
     grunt.registerTask('serve', ['connect:server', 'watch']);
     grunt.registerTask('test', ['csslint']);
-    grunt.registerTask('build', ['autoprefixer']);
+    grunt.registerTask('build', ['autoprefixer', 'concat:dist']);
 
 }
