@@ -1,3 +1,12 @@
-// Opus Front
+/*--------------------------------------------------
+   |					      	B A S E 							     |
+   --------------------------------------------------
 
-// Base properties
+	Hide every element that has the hidden attribute
+*/
+
+[hidden] {
+	display: none !important;
+}
+
+

@@ -14,16 +14,17 @@ module.exports = function (grunt) {
             }
         },
 
-        // sass : {
-        //     dist : {
-        //         options : {
-        //             style : 'expanded'
-        //         },
-        //         files : {
-        //             'build/opus-front.css' : ['src/**/**.scss']
-        //         }
-        //     }
-        // },
+        sass : {
+            dist : {
+                options : {
+                    style : 'expanded'
+                },
+                files : {
+                    'src/base/base.css' : 'src/base/base.scss',
+                    'src/grid/grid.css' : 'src/grid/grid.scss'
+                }
+            }
+        },
 
         autoprefixer: {
             dist: {

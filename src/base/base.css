@@ -1,11 +1,9 @@
 /*--------------------------------------------------
    |					      	B A S E 							     |
-   --------------------------------------------------*/
+   --------------------------------------------------
 
-/* Hide every element that has the hidden attribute */
-
+	Hide every element that has the hidden attribute
+*/
 [hidden] {
-	display: none !important;
+  display: none !important;
 }
-
-
