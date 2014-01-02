@@ -1,6 +1,7 @@
 {
   "name": "Opus Front",
   "version": "0.0.1",
+  "repository" : "https://github.com/andreloureiro/opus-front",
   "devDependencies": {
     "grunt-cli": "latest",
     "grunt-contrib-sass": "latest",
