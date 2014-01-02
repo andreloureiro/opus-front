@@ -22,7 +22,8 @@ module.exports = function (grunt) {
                 files : {
                     'src/base/base.css' : 'src/base/base.scss',
                     'src/grid/grid.css' : 'src/grid/grid.scss',
-                    'src/buttons/buttons.css' : 'src/buttons/buttons.scss'
+                    'src/buttons/buttons.css' : 'src/buttons/buttons.scss',
+                    'src/forms/forms.css' : 'src/forms/forms.scss'
                 }
             }
         },
@@ -44,6 +45,14 @@ module.exports = function (grunt) {
                     import : 2
                 },
                 src : ['build/**.css']
+            }
+        },
+
+        cssmin : {
+            combine : {
+                files : {
+                    'build/opus-front.min.css' : ['src/base/base.css', 'grid/grid.css', 'buttons/buttons.css']
+                }
             }
         },
 
@@ -80,6 +89,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('serve', ['connect:server', 'watch']);
     grunt.registerTask('test', ['csslint']);
-    grunt.registerTask('build', ['autoprefixer', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:all']);
+    grunt.registerTask('build', ['autoprefixer', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:all', 'cssmin:combine']);
 
 }

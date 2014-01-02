@@ -3,13 +3,13 @@
    --------------------------------------------------
 */
 
-.kGr {
+.grid {
 	display: -webkit-flex;
 	-webkit-flex-flow: row wrap;
 	display: -ms-flexbox;
 	-ms-flex-flow: row wrap;
 
-	[class *= "kGrU"] {
+	[class *= "grid-unit"] {
 		display: inline-block;
 		*display: inline;
 		vertical-align: top;
@@ -20,54 +20,60 @@
 		zoom: 1;
 	}
 
-	.kGrU-1 {
+	.grid-unit-1 {
 		width: 100%;
 	}
 
+	@for $i from 1 through 1 {
+		.grid-unit-#{$i}-2 {
+			width: #{(100%/2) * $i};
+		}
+	}
+
 	@for $i from 1 through 2 {
-		.kGrU-#{$i}-3 {
+		.grid-unit-#{$i}-3 {
 			width: #{(100%/3) * $i};
 		}
 	}
 
 	@for $i from 1 through 3 {
-		.kGrU-#{$i}-4 {
+		.grid-unit-#{$i}-4 {
 			width: #{(100%/4) * $i};
 		}
 	}
 
 	@for $i from 1 through 4 {
-		.kGrU-#{$i}-5 {
+		.grid-unit-#{$i}-5 {
 			width: #{(100%/5) * $i};
 		}
 	}
 
 	@for $i from 1 through 5 {
-		.kGrU-#{$i}-6 {
+		.grid-unit-#{$i}-6 {
 			width: #{(100%/6) * $i};
 		}
 	}
 
 	@for $i from 1 through 6 {
-		.kGrU-#{$i}-7 {
+		.grid-unit-#{$i}-7 {
 			width: #{(100%/7) * $i};
 		}
 	}
 
 	@for $i from 1 through 7 {
-		.kGrU-#{$i}-8 {
+		.grid-unit-#{$i}-8 {
 			width: #{(100%/8) * $i};
 		}
 	}
 
 	@for $i from 1 through 11 {
-		.kGrU-#{$i}-12 {
+		.grid-unit-#{$i}-12 {
 			width: #{(100%/12) * $i};
 		}
 	}
 
 	@for $i from 1 through 23 {
-		.kGrU-#{$i}-24 {
+		.grid-unit-#{$i}-24 {
 			width: #{(100%/24) * $i};
 		}
 	}

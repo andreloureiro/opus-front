@@ -1,11 +1,11 @@
 /*--------------------------------------------------
 
-		KEMPLE
-		A simple CSS framework
+		Opus Front
+		A simple CSS framework for use in Opus Software projects
 
 		Version : Alpha 0.0.1
 
-		http://github.com/andreloureiro/keemple
+		http://github.com/andreloureiro/opus-front
 
 --------------------------------------------------*/
 
@@ -416,4 +416,62 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+/*--------------------------------------------------
+   |					      B U T T O N S 						     |
+   --------------------------------------------------
+*/
+.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: .4em 1em;
+  background: #EEE;
+  border: none;
+  border-top: 0px solid transparent;
+  border-bottom: 2px solid #DDD;
+  text-decoration: none;
+  color: #333;
+  outline: none;
+}
+.button:active {
+  border-top: 2px solid transparent;
+  border-bottom: 0px;
+}
+.button.button--disabled {
+  background: #EFEFEF;
+  color: #ccc;
+  border: none;
+  cursor: not-allowed;
+}
+.button.button--active {
+  background: #BBB;
+  border: none;
+}
+.button.button--success {
+  background: #1aa71b;
+  color: white;
+  border-bottom-color: #168f17;
+}
+.button.button--error {
+  background: #c10f03;
+  color: white;
+  border-bottom-color: #970a02;
+}
+.button.button--warning {
+  background: #ebc41b;
+  color: #333;
+  border-bottom-color: #c7a415;
+}
+.button.button--extra-small {
+  font-size: 60%;
+}
+.button.button--small {
+  font-size: 80%;
+}
+.button.button--large {
+  font-size: 120%;
+}
+.button.button--extra-large {
+  font-size: 140%;
 }

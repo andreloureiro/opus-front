@@ -1,7 +1,7 @@
 {
-  "name": "Opus Front",
+  "name": "OpusFront",
   "version": "0.0.1",
-  "repository" : "https://github.com/andreloureiro/opus-front",
+  "repository": "https://github.com/andreloureiro/opus-front",
   "devDependencies": {
     "grunt-cli": "latest",
     "grunt-contrib-sass": "latest",
@@ -11,6 +11,7 @@
     "load-grunt-tasks": "~0.2.1",
     "grunt-autoprefixer": "~0.6.3",
     "grunt": "~0.4.2",
-    "grunt-contrib-concat": "~0.3.0"
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.7.0"
   }
 }
