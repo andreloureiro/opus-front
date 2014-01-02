@@ -21,7 +21,8 @@ module.exports = function (grunt) {
                 },
                 files : {
                     'src/base/base.css' : 'src/base/base.scss',
-                    'src/grid/grid.css' : 'src/grid/grid.scss'
+                    'src/grid/grid.css' : 'src/grid/grid.scss',
+                    'src/buttons/buttons.css' : 'src/buttons/buttons.scss'
                 }
             }
         },
@@ -57,8 +58,20 @@ module.exports = function (grunt) {
         },
 
         concat : {
-            dist : {
-                src : ['src/intro.css', 'src/base/base.css', 'src/grid/grid.css'],
+            base : {
+                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/base/base.css'],
+                dest : 'build/base.css'
+            },
+            grid : {
+                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/grid/grid.css'],
+                dest : 'build/grid.css'
+            },
+            buttons : {
+                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/buttons/buttons.css'],
+                dest : 'build/buttons.css'
+            },
+            all : {
+                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/base/base.css', 'src/grid/grid.css', 'src/buttons/buttons.scss'],
                 dest : 'build/keemple.css'
             }
         }
@@ -67,6 +80,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('serve', ['connect:server', 'watch']);
     grunt.registerTask('test', ['csslint']);
-    grunt.registerTask('build', ['autoprefixer', 'concat:dist']);
+    grunt.registerTask('build', ['autoprefixer', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:all']);
 
 }
