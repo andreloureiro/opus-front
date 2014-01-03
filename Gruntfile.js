@@ -123,7 +123,7 @@ module.exports = function (grunt) {
             },
             all : {
                 src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/base/base.css', 'src/grid/grid.css', 'src/buttons/buttons.scss', 'src/forms/forms.css'],
-                dest : 'build/keemple.css'
+                dest : 'build/opus-front.css'
             }
         },
 
