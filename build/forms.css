@@ -418,60 +418,32 @@ table {
     border-spacing: 0;
 }
 
-/*--------------------------------------------------
-   |					      B U T T O N S 						     |
-   --------------------------------------------------
-*/
-.button {
-  display: inline-block;
+.table {
+  border: 1px solid #CCC;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+.table td, .table th {
+  border-left: 1px solid #CCC;
+  overflow: visible;
+  padding: .4em .6em;
+}
+.table td:first-child, .table th:first-child {
+  border-left-width: 0;
+}
+.table thead {
   vertical-align: top;
-  padding: .4em 1em;
   background: #EEE;
-  border: none;
-  border-top: 0px solid transparent;
-  border-bottom: 2px solid #DDD;
-  text-decoration: none;
-  color: #333;
-  outline: none;
+  text-align: left;
 }
-.button:active {
-  border-top: 2px solid transparent;
-  border-bottom: 0px;
+.table.table-bordered tr {
+  border-bottom: 1px solid #CCC;
 }
-.button.button--disabled {
-  background: #EFEFEF;
-  color: #ccc;
-  border: none;
-  cursor: not-allowed;
+.table.table-horizontal td, .table.table-horizontal th {
+  border-left-width: 0;
+  border-bottom: 1px solid #CCC;
 }
-.button.button--active {
-  background: #BBB;
-  border: none;
-}
-.button.button--success {
-  background: #1aa71b;
-  color: white;
-  border-bottom-color: #168f17;
-}
-.button.button--error {
-  background: #c10f03;
-  color: white;
-  border-bottom-color: #970a02;
-}
-.button.button--warning {
-  background: #ebc41b;
-  color: #333;
-  border-bottom-color: #c7a415;
-}
-.button.button--extra-small {
-  font-size: 60%;
-}
-.button.button--small {
-  font-size: 80%;
-}
-.button.button--large {
-  font-size: 120%;
-}
-.button.button--extra-large {
-  font-size: 140%;
+.table.table-striped tbody tr:nth-child(odd) {
+  background: #F7F7F7;
 }

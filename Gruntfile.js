@@ -23,18 +23,19 @@ module.exports = function (grunt) {
                     'src/base/base.css' : 'src/base/base.scss',
                     'src/grid/grid.css' : 'src/grid/grid.scss',
                     'src/buttons/buttons.css' : 'src/buttons/buttons.scss',
-                    'src/forms/forms.css' : 'src/forms/forms.scss'
+                    'src/forms/forms.css' : 'src/forms/forms.scss',
+                    'src/tables/tables.css' : 'src/tables/tables.scss'
                 }
             }
         },
 
-        autoprefixer: {
-            dist: {
-                files: {
-                    'build/opus-front2.css': 'build/opus-front.css'
-                }
-            }
-        },
+        // autoprefixer: {
+        //     dist: {
+        //         files: {
+        //             'build/opus-front2.css': 'build/opus-front.css'
+        //         }
+        //     }
+        // },
 
         csslint : {
             options: {
@@ -68,6 +69,9 @@ module.exports = function (grunt) {
                     },
                     {
                         'build/forms.min.css' : 'src/forms/forms.css'
+                    },
+                    {
+                        'build/tables.min.css' : 'src/tables/tables.css'
                     }
                 ]
                 // modules : {
@@ -113,9 +117,19 @@ module.exports = function (grunt) {
                 src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/buttons/buttons.css'],
                 dest : 'build/forms.css'
             },
+            tables : {
+                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/tables/tables.css'],
+                dest : 'build/forms.css'
+            },
             all : {
                 src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/base/base.css', 'src/grid/grid.css', 'src/buttons/buttons.scss', 'src/forms/forms.css'],
                 dest : 'build/keemple.css'
+            }
+        },
+
+        clean : {
+            build : {
+                src : ['build']
             }
         }
 
@@ -123,6 +137,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('serve', ['connect:server', 'watch']);
     grunt.registerTask('test', ['csslint']);
-    grunt.registerTask('build', ['autoprefixer', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:form', 'concat:all', 'cssmin:combine']);
+    grunt.registerTask('build', ['clean:build', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:form', 'concat:tables', 'concat:all', 'cssmin:combine']);
 
 }
