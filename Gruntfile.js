@@ -49,11 +49,41 @@ module.exports = function (grunt) {
         },
 
         cssmin : {
+            options : {
+                report : 'gzip'
+            },
             combine : {
-                files : {
-                    'build/opus-front.min.css' : ['src/base/base.css', 'grid/grid.css', 'buttons/buttons.css']
-                }
+                files : [
+                    {
+                        'build/opus-front.min.css' : ['bower_components/normalize-css/normalize.css', 'src/base/base.css', 'src/grid/grid.css', 'src/buttons/buttons.css', 'src/forms/forms.css']
+                    },
+                    {
+                        'build/base.min.css' : 'src/base/base.css'
+                    },
+                    {
+                        'build/grid.min.css' : 'src/grid/grid.css'
+                    },
+                    {
+                        'build/buttons.min.css' : 'src/buttons/buttons.css'
+                    },
+                    {
+                        'build/forms.min.css' : 'src/forms/forms.css'
+                    }
+                ]
+                // modules : {
+                //     buttons : {
+                //         files : {
+                //             'build/buttons.css' : 'src/buttons/buttons.css'
+                //         }
+                //     },
+                //     forms : {
+                //         files : {
+                //             'build/forms.css' : 'src/forms/forms.css'
+                //         }
+                //     }
+                // }
             }
+            
         },
 
         watch : {
@@ -79,8 +109,12 @@ module.exports = function (grunt) {
                 src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/buttons/buttons.css'],
                 dest : 'build/buttons.css'
             },
+            form : {
+                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/buttons/buttons.css'],
+                dest : 'build/forms.css'
+            },
             all : {
-                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/base/base.css', 'src/grid/grid.css', 'src/buttons/buttons.scss'],
+                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/base/base.css', 'src/grid/grid.css', 'src/buttons/buttons.scss', 'src/forms/forms.css'],
                 dest : 'build/keemple.css'
             }
         }
@@ -89,6 +123,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('serve', ['connect:server', 'watch']);
     grunt.registerTask('test', ['csslint']);
-    grunt.registerTask('build', ['autoprefixer', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:all', 'cssmin:combine']);
+    grunt.registerTask('build', ['autoprefixer', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:form', 'concat:all', 'cssmin:combine']);
 
 }

@@ -1,0 +1,101 @@
+.form fieldset {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.form fieldset [class*='grid-unit'] {
+  margin-bottom: 1em;
+}
+.form input[type=text], .form input[type=email], .form input[type=password] {
+  display: block;
+  padding: .4em .6em;
+  border: none;
+  border: 1px solid #BBB;
+  border-radius: .2em;
+  outline: none;
+}
+.form label {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: .8em;
+}
+.form.form--inline fieldset {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.form.form--inline fieldset input[type=text], .form.form--inline fieldset input[type=email], .form.form--inline fieldset input[type=password] {
+  display: inline-block;
+  vertical-align: middle;
+  padding: .4em .6em;
+  border: none;
+  border: 1px solid #BBB;
+  border-radius: .2em;
+  outline: none;
+}
+.form.form--inline fieldset label {
+  font-size: .8em;
+  color: #555;
+}
+.form.form--aligned fieldset {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.form.form--aligned fieldset .form-group {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.form.form--aligned fieldset .form-group label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin-right: 1.2em;
+  text-align: right;
+}
+.form.form--aligned fieldset .form-group input[type=text], .form.form--aligned fieldset .form-group input[type=email], .form.form--aligned fieldset .form-group input[type=password] {
+  display: inline-block;
+  vertical-align: middle;
+  padding: .4em .6em;
+  border: none;
+  border: 1px solid #BBB;
+  border-radius: .2em;
+  outline: none;
+}
+.form.form--aligned fieldset .form-group-buttons {
+  display: block;
+  width: 100%;
+  margin-left: 10em;
+}
+.form.form--aligned fieldset .form-group-buttons label {
+  display: block;
+  vertical-align: middle;
+  width: 10em;
+  margin-bottom: 1em;
+  text-align: right;
+}
+.form.form--aligned fieldset .form-group-buttons input[type=text], .form.form--aligned fieldset .form-group-buttons input[type=email], .form.form--aligned fieldset .form-group-buttons input[type=password] {
+  display: inline-block;
+  vertical-align: top;
+  padding: .4em .6em;
+  border: none;
+  border: 1px solid #BBB;
+  border-radius: .2em;
+  outline: none;
+}
+.form input[required]:focus {
+  border: 1px solid #c10f03;
+}
+.form input[disabled] {
+  background: #DDD;
+  color: #BBB;
+  cursor: not-allowed;
+}
+.form input[readonly] {
+  background: #EEE;
+}
