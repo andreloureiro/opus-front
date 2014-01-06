@@ -51,3 +51,13 @@ $button-error-color: $white;
 $button-warning-background: $yellow;
 $button-warning-color: $black;
 
+
+
+// Input borders
+
+$input-border-size: 1px;
+$input-border-color: $gray;
+$input-required-border-color: $red;
+$input-disabled-background: darken($white, 10%);
+$input-disabled-color: darken($white, 20%);
+$input-readonly-background: darken($white, 5%);

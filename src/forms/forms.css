@@ -11,7 +11,7 @@
   display: block;
   padding: .4em .6em;
   border: none;
-  border: 1px solid #BBB;
+  border: 1px solid #95a5a6;
   border-radius: .2em;
   outline: none;
 }
@@ -32,7 +32,7 @@
   vertical-align: middle;
   padding: .4em .6em;
   border: none;
-  border: 1px solid #BBB;
+  border: 1px solid #95a5a6;
   border-radius: .2em;
   outline: none;
 }
@@ -63,7 +63,7 @@
   vertical-align: middle;
   padding: .4em .6em;
   border: none;
-  border: 1px solid #BBB;
+  border: 1px solid #95a5a6;
   border-radius: .2em;
   outline: none;
 }
@@ -84,18 +84,18 @@
   vertical-align: top;
   padding: .4em .6em;
   border: none;
-  border: 1px solid #BBB;
+  border: 1px solid #95a5a6;
   border-radius: .2em;
   outline: none;
 }
 .form input[required]:focus {
-  border: 1px solid #c10f03;
+  border: 1px solid #e74c3c;
 }
 .form input[disabled] {
-  background: #DDD;
-  color: #BBB;
+  background: #e2e2e2;
+  color: #c8c8c8;
   cursor: not-allowed;
 }
 .form input[readonly] {
-  background: #EEE;
+  background: #eeeeee;
 }

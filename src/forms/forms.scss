@@ -1,3 +1,5 @@
+@import "../config/colors.scss";
+
 .form {
 	fieldset {
 		display: block;
@@ -15,7 +17,7 @@
 		display: block;
 		padding: .4em .6em;
 		border: none;
-		border: 1px solid #BBB;
+		border: $input-border-size solid $input-border-color;
 		border-radius: .2em;
 		outline: none;
 	}
@@ -39,7 +41,7 @@
 				vertical-align: middle;
 				padding: .4em .6em;
 				border: none;
-				border: 1px solid #BBB;
+				border: $input-border-size solid $input-border-color;
 				border-radius: .2em;
 				outline: none;
 			}
@@ -76,7 +78,7 @@
 					vertical-align: middle;
 					padding: .4em .6em;
 					border: none;
-					border: 1px solid #BBB;
+					border: $input-border-size solid $input-border-color;
 					border-radius: .2em;
 					outline: none;
 				}
@@ -100,7 +102,7 @@
 					vertical-align: top;
 					padding: .4em .6em;
 					border: none;
-					border: 1px solid #BBB;
+					border: $input-border-size solid $input-border-color;
 					border-radius: .2em;
 					outline: none;
 				}
@@ -109,17 +111,17 @@
 	}
 
 	input[required]:focus {
-		border: 1px solid #c10f03;
+		border: $input-border-size solid $input-required-border-color;
 	}
 
 	input[disabled] {
-		background: #DDD;
-		color: #BBB;
+		background: $input-disabled-background;
+		color: $input-disabled-color;
 		cursor: not-allowed;
 	}
 
 	input[readonly] {
-		background: #EEE;
+		background: $input-readonly-background;
 	}
 }
 	
