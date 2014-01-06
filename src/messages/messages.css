@@ -1,0 +1,24 @@
+.message {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  background: blue;
+  text-align: center;
+}
+.message p {
+  margin: 0;
+  padding: .6em;
+  color: white;
+}
+.message.message--success {
+  background: green;
+}
+.message.message--error {
+  background: red;
+}
+.message.message--warning {
+  background: yellow;
+}
+.message.message--warning p {
+  color: #333333;
+}

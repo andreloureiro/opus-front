@@ -11,6 +11,12 @@ module.exports = function (grunt) {
                     port : 9999,
                     base : 'build'
                 }
+            },
+            test : {
+                options : {
+                    port : 9998,
+                    base : 'src'
+                }
             }
         },
 
@@ -24,7 +30,9 @@ module.exports = function (grunt) {
                     'src/grid/grid.css' : 'src/grid/grid.scss',
                     'src/buttons/buttons.css' : 'src/buttons/buttons.scss',
                     'src/forms/forms.css' : 'src/forms/forms.scss',
-                    'src/tables/tables.css' : 'src/tables/tables.scss'
+                    'src/tables/tables.css' : 'src/tables/tables.scss',
+                    'src/menus/menus.css' : 'src/menus/menus.scss',
+                    'src/messages/messages.css' : 'src/messages/messages.scss'
                 }
             }
         },
@@ -136,7 +144,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('serve', ['connect:server', 'watch']);
-    grunt.registerTask('test', ['csslint']);
+    grunt.registerTask('test', ['connect:test', 'watch']);
     grunt.registerTask('build', ['clean:build', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:form', 'concat:tables', 'concat:all', 'cssmin:combine']);
 
 }
