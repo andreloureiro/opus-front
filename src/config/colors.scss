@@ -61,3 +61,10 @@ $input-required-border-color: $red;
 $input-disabled-background: darken($white, 10%);
 $input-disabled-color: darken($white, 20%);
 $input-readonly-background: darken($white, 5%);
+
+
+// Tables
+
+$table-border-color: $gray;
+$table-thead-background: $silver;
+$table-stripped-background: lighten($silver, 3%);

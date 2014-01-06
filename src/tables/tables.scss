@@ -1,10 +1,12 @@
+@import "../config/colors.scss";
+
 .table {
-	border: 1px solid #CCC;
+	border: 1px solid $table-border-color;
 	border-collapse: collapse;
 	border-spacing: 0;
 	empty-cells: show;
 	td, th {
-		border-left: 1px solid #CCC;
+		border-left: 1px solid $table-border-color;
 		overflow: visible;
 		padding: .4em .6em;
 	}
@@ -13,27 +15,27 @@
 	}
 	thead {
 		vertical-align: top;
-		background: #EEE;
+		background: $table-thead-background;
 		text-align: left;
 	}
 
 	&.table-bordered {
 		tr {
-			border-bottom: 1px solid #CCC;
+			border-bottom: 1px solid $table-border-color;
 		}
 	}
 
 	&.table-horizontal {
 		td, th {
 			border-left-width: 0;
-			border-bottom: 1px solid #CCC;
+			border-bottom: 1px solid $table-border-color;
 		}
 	}
 
 	&.table-striped {
 		tbody {
 			tr:nth-child(odd) {
-				background: #F7F7F7;
+				background: $table-stripped-background;
 			}
 		}
 	}
