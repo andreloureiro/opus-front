@@ -1,3 +1,5 @@
+@import "../config/colors";
+
 /*--------------------------------------------------
    |					      B U T T O N S 						     |
    --------------------------------------------------
@@ -7,13 +9,13 @@
 	display: inline-block;
 	vertical-align: top;
 	padding: .4em 1em;
-	background: #EEE;
+	background: $button-background;
 	border: none;
 	border-top: 0px solid transparent;
-	border-bottom: 2px solid #DDD;
+	border-bottom: 2px solid darken($silver, 10%);
 
 	text-decoration: none;
-	color: #333;
+	color: $black;
 
 	outline: none;
 
@@ -23,33 +25,34 @@
 	}
 
 	&.button--disabled {
-		background: #EFEFEF;
-		color: #ccc;
+		background: $button-disabled-background;
+		color: $button-disabled-color;
 		border: none;
 		cursor: not-allowed; 
 	}
 
 	&.button--active {
-		background: #BBB;
+		background: $button-active-background;
+		color: $button-active-color;
 		border: none;
 	}
 
 	&.button--success {
-		background: #1aa71b;
-		color: white;
-		border-bottom-color: #168f17;
+		background: $button-success-background;
+		color: $button-success-color;
+		border-bottom-color: darken($button-success-background, 10%);
 	}
 
 	&.button--error {
-		background: #c10f03;
-		color: white;
-		border-bottom-color: #970a02;
+		background: $button-error-background;
+		color: $button-error-color;
+		border-bottom-color: darken($button-error-background, 10%);
 	}
 
 	&.button--warning {
-		background: #ebc41b;
-		color: #333;
-		border-bottom-color: #c7a415;
+		background: $button-warning-background;
+		color: $button-warning-color;
+		border-bottom-color: darken($button-warning-background, 10%);
 	}
 
 	&.button--extra-small {

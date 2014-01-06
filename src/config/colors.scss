@@ -5,7 +5,7 @@ $blue: rgba(52, 152, 219, 1);
 $blue-dark: rgba(41, 128, 185, 1);
 
 $green: rgba(46, 204, 113, 1);
-$green-dark: rgba(39, 174, 96 1);
+$green-dark: rgba(39, 174, 96, 1);
 
 $yellow: rgba(241, 196, 15, 1);
 $yellow-dark: rgba(243, 156, 18, 1);
@@ -27,3 +27,27 @@ $silver-dark: rgba(189, 195, 199, 1);
 
 $gray: rgba(149, 165, 166, 1);
 $gray-dark: rgba(127, 140, 141, 1);
+
+
+// UI
+
+// Buttons
+
+$button-background: $silver;
+$button-color: $black;
+
+$button-disabled-background: darken($white, 10%);
+$button-disabled-color: darken($white, 20%);
+
+$button-active-background: darken($silver, 10%);
+$button-active-color: $black;
+
+$button-success-background: $green;
+$button-success-color: $white;
+
+$button-error-background: $red;
+$button-error-color: $white;
+
+$button-warning-background: $yellow;
+$button-warning-color: $black;
+
