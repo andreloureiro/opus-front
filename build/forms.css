@@ -419,13 +419,13 @@ table {
 }
 
 .table {
-  border: 1px solid #CCC;
+  border: 1px solid #95a5a6;
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
 }
 .table td, .table th {
-  border-left: 1px solid #CCC;
+  border-left: 1px solid #95a5a6;
   overflow: visible;
   padding: .4em .6em;
 }
@@ -434,16 +434,16 @@ table {
 }
 .table thead {
   vertical-align: top;
-  background: #EEE;
+  background: #ecf0f1;
   text-align: left;
 }
 .table.table-bordered tr {
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #95a5a6;
 }
 .table.table-horizontal td, .table.table-horizontal th {
   border-left-width: 0;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #95a5a6;
 }
 .table.table-striped tbody tr:nth-child(odd) {
-  background: #F7F7F7;
+  background: #f5f7f7;
 }

@@ -426,12 +426,12 @@ table {
   display: inline-block;
   vertical-align: top;
   padding: .4em 1em;
-  background: #EEE;
+  background: #ecf0f1;
   border: none;
   border-top: 0px solid transparent;
-  border-bottom: 2px solid #DDD;
+  border-bottom: 2px solid #cfd9db;
   text-decoration: none;
-  color: #333;
+  color: #1e1e1e;
   outline: none;
 }
 .button:active {
@@ -439,29 +439,30 @@ table {
   border-bottom: 0px;
 }
 .button.button--disabled {
-  background: #EFEFEF;
-  color: #ccc;
+  background: #e2e2e2;
+  color: #c8c8c8;
   border: none;
   cursor: not-allowed;
 }
 .button.button--active {
-  background: #BBB;
+  background: #cfd9db;
+  color: #1e1e1e;
   border: none;
 }
 .button.button--success {
-  background: #1aa71b;
-  color: white;
-  border-bottom-color: #168f17;
+  background: #2ecc71;
+  color: #fbfbfb;
+  border-bottom-color: #25a25a;
 }
 .button.button--error {
-  background: #c10f03;
-  color: white;
-  border-bottom-color: #970a02;
+  background: #e74c3c;
+  color: #fbfbfb;
+  border-bottom-color: #d62c1a;
 }
 .button.button--warning {
-  background: #ebc41b;
-  color: #333;
-  border-bottom-color: #c7a415;
+  background: #f1c40f;
+  color: #1e1e1e;
+  border-bottom-color: #c29d0b;
 }
 .button.button--extra-small {
   font-size: 60%;
