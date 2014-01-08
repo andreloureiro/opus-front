@@ -3,7 +3,7 @@
 		Opus Front
 		A simple CSS framework for use in Opus Software projects
 
-		Version : Alpha 0.0.1
+		Version : Alpha 0.1.0
 
 		http://github.com/andreloureiro/opus-front
 
@@ -433,6 +433,7 @@ table {
    --------------------------------------------------
 */
 .grid {
+  *display: block;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
@@ -443,10 +444,14 @@ table {
   *display: inline;
   vertical-align: top;
   box-sizing: border-box;
+  padding-left: 0.625em;
   letter-spacing: normal;
   word-spacing: normal;
   text-rendering: auto;
   zoom: 1;
+}
+.grid [class*="grid-unit"]:last-child {
+  padding-right: 0.625em;
 }
 .grid .grid-unit-1 {
   width: 100%;
@@ -811,4 +816,104 @@ table {
 }
 .form input[readonly] {
   background: #eeeeee;
+}
+
+.menu .heading {
+  display: inline-block;
+  padding: .6em .8em;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #777;
+}
+.menu ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+}
+.menu ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -4px;
+  list-style-type: none;
+}
+.menu ul li:first-child {
+  margin-left: 0;
+}
+.menu ul li a {
+  display: block;
+  padding: .6em .8em;
+  text-decoration: none;
+  color: #555;
+}
+.menu ul li a:hover {
+  background: #EFEFEF;
+}
+.menu ul li a.active {
+  color: #111;
+}
+.menu.menu--bordered {
+  display: inline-block;
+  border: 1px solid #555;
+}
+
+.menu--vertical .heading {
+  display: block;
+  padding: .6em .8em;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #777;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+.menu--vertical ul {
+  margin: 0;
+  padding: 0;
+}
+.menu--vertical ul li {
+  display: block;
+  list-style-type: none;
+}
+.menu--vertical ul li a {
+  display: block;
+  padding: .6em .8em;
+  text-decoration: none;
+  color: #555;
+}
+.menu--vertical ul li a:hover {
+  background: #EFEFEF;
+}
+.menu--vertical ul li a.active {
+  color: #111;
+}
+.menu--vertical.menu--vertical-bordered {
+  display: inline-block;
+  border: 1px solid #555;
+}
+
+.message {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  background: blue;
+  text-align: center;
+}
+.message p {
+  margin: 0;
+  padding: .6em;
+  color: white;
+}
+.message.message--success {
+  background: green;
+}
+.message.message--error {
+  background: red;
+}
+.message.message--warning {
+  background: yellow;
+}
+.message.message--warning p {
+  color: #333333;
 }

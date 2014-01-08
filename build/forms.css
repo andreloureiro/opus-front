@@ -3,7 +3,7 @@
 		Opus Front
 		A simple CSS framework for use in Opus Software projects
 
-		Version : Alpha 0.0.1
+		Version : Alpha 0.1.0
 
 		http://github.com/andreloureiro/opus-front
 
@@ -418,32 +418,61 @@ table {
     border-spacing: 0;
 }
 
-.table {
-  border: 1px solid #95a5a6;
-  border-collapse: collapse;
-  border-spacing: 0;
-  empty-cells: show;
-}
-.table td, .table th {
-  border-left: 1px solid #95a5a6;
-  overflow: visible;
-  padding: .4em .6em;
-}
-.table td:first-child, .table th:first-child {
-  border-left-width: 0;
-}
-.table thead {
+/*--------------------------------------------------
+   |					      B U T T O N S 						     |
+   --------------------------------------------------
+*/
+.button {
+  display: inline-block;
   vertical-align: top;
+  padding: .4em 1em;
   background: #ecf0f1;
-  text-align: left;
+  border: none;
+  border-top: 0px solid transparent;
+  border-bottom: 2px solid #cfd9db;
+  text-decoration: none;
+  color: #1e1e1e;
+  outline: none;
 }
-.table.table-bordered tr {
-  border-bottom: 1px solid #95a5a6;
+.button:active {
+  border-top: 2px solid transparent;
+  border-bottom: 0px;
 }
-.table.table-horizontal td, .table.table-horizontal th {
-  border-left-width: 0;
-  border-bottom: 1px solid #95a5a6;
+.button.button--disabled {
+  background: #e2e2e2;
+  color: #c8c8c8;
+  border: none;
+  cursor: not-allowed;
 }
-.table.table-striped tbody tr:nth-child(odd) {
-  background: #f5f7f7;
+.button.button--active {
+  background: #cfd9db;
+  color: #1e1e1e;
+  border: none;
+}
+.button.button--success {
+  background: #2ecc71;
+  color: #fbfbfb;
+  border-bottom-color: #25a25a;
+}
+.button.button--error {
+  background: #e74c3c;
+  color: #fbfbfb;
+  border-bottom-color: #d62c1a;
+}
+.button.button--warning {
+  background: #f1c40f;
+  color: #1e1e1e;
+  border-bottom-color: #c29d0b;
+}
+.button.button--extra-small {
+  font-size: 60%;
+}
+.button.button--small {
+  font-size: 80%;
+}
+.button.button--large {
+  font-size: 120%;
+}
+.button.button--extra-large {
+  font-size: 140%;
 }
