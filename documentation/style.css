@@ -1,0 +1,14 @@
+.title-area {
+	text-align: center;
+}
+
+.menu-content {
+	width: 90%;
+	box-sizing: border-box;
+}
+
+[class *= 'grid-unit'] {
+}
+
+.content {
+}
