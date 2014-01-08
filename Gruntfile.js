@@ -96,18 +96,6 @@ module.exports = function (grunt) {
                         'build/messages.min.css' : 'src/messages/messages.css'
                     }
                 ]
-                // modules : {
-                //     buttons : {
-                //         files : {
-                //             'build/buttons.css' : 'src/buttons/buttons.css'
-                //         }
-                //     },
-                //     forms : {
-                //         files : {
-                //             'build/forms.css' : 'src/forms/forms.css'
-                //         }
-                //     }
-                // }
             }
             
         },
@@ -141,10 +129,27 @@ module.exports = function (grunt) {
             },
             tables : {
                 src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/tables/tables.css'],
-                dest : 'build/forms.css'
+                dest : 'build/tables.css'
+            },
+            menus : {
+                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/menus/menus.css'],
+                dest : 'build/menus.css'
+            },
+            messages : {
+                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/messages/messages.css'],
+                dest : 'build/messages.css'
             },
             all : {
-                src : ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/base/base.css', 'src/grid/grid.css', 'src/buttons/buttons.scss', 'src/forms/forms.css'],
+                src : [
+                    'src/intro.css',
+                    'bower_components/normalize-css/normalize.css', 
+                    'src/base/base.css', 
+                    'src/grid/grid.css', 
+                    'src/buttons/buttons.scss', 
+                    'src/forms/forms.css', 
+                    'src/menus/menus.css', 
+                    'src/messages/messages.css'
+                    ],
                 dest : 'build/opus-front.css'
             }
         },
@@ -159,6 +164,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('serve', ['connect:server', 'watch']);
     grunt.registerTask('test', ['connect:test', 'watch']);
-    grunt.registerTask('build', ['clean:build', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:form', 'concat:tables', 'concat:all', 'cssmin:combine']);
+    grunt.registerTask('build', ['clean:build', 'concat:base', 'concat:grid', 'concat:buttons', 'concat:form', 'concat:tables', 'concat:menus', 'concat:messages', 'concat:all', 'cssmin:combine']);
 
 }
