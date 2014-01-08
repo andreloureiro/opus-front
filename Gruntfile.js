@@ -64,7 +64,15 @@ module.exports = function (grunt) {
             combine : {
                 files : [
                     {
-                        'build/opus-front.min.css' : ['bower_components/normalize-css/normalize.css', 'src/base/base.css', 'src/grid/grid.css', 'src/buttons/buttons.css', 'src/forms/forms.css']
+                        'build/opus-front.min.css' : [
+                        'bower_components/normalize-css/normalize.css',
+                        'src/base/base.css',
+                        'src/grid/grid.css',
+                        'src/buttons/buttons.css',
+                        'src/forms/forms.css',
+                        'src/tables/tables.css',
+                        'src/menus/menus.css',
+                        'src/messages/messages.css']
                     },
                     {
                         'build/base.min.css' : 'src/base/base.css'
@@ -80,6 +88,12 @@ module.exports = function (grunt) {
                     },
                     {
                         'build/tables.min.css' : 'src/tables/tables.css'
+                    },
+                    {
+                        'build/menus.min.css' : 'src/menus/menus.css'
+                    },
+                    {
+                        'build/messages.min.css' : 'src/messages/messages.css'
                     }
                 ]
                 // modules : {
