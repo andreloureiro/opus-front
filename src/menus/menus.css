@@ -47,6 +47,9 @@ body {
   border: 1px solid #95a5a6;
 }
 
+.menu--vertical {
+  display: inline-block;
+}
 .menu--vertical .heading {
   display: block;
   padding: .6em .8em;

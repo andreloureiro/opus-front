@@ -437,6 +437,7 @@ body {
   border-bottom: 2px solid #cfd9db;
   text-decoration: none;
   color: #1e1e1e;
+  font-weight: 400;
   outline: none;
 }
 .button:active {

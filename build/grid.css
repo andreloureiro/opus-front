@@ -433,6 +433,7 @@ body {
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
+  display: flex;
 }
 .grid [class*="grid-unit"] {
   display: inline-block;

@@ -459,6 +459,7 @@ body {
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
+  display: flex;
 }
 .grid [class*="grid-unit"] {
   display: inline-block;
@@ -683,6 +684,7 @@ body {
   border-bottom: 2px solid #cfd9db;
   text-decoration: none;
   color: #1e1e1e;
+  font-weight: 400;
   outline: none;
 }
 .button:active {
@@ -808,7 +810,7 @@ body {
 }
 .form.form--aligned fieldset .form-group-buttons {
   display: block;
-  width: 100%;
+  margin-left: 10em;
 }
 .form.form--aligned fieldset .form-group-buttons label {
   display: block;
@@ -835,7 +837,122 @@ body {
   background: #eeeeee;
 }
 
+.table {
+  border: 1px solid #95a5a6;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+.table td, .table th {
+  border-left: 1px solid #95a5a6;
+  overflow: visible;
+  padding: .4em .6em;
+}
+.table td:first-child, .table th:first-child {
+  border-left-width: 0;
+}
+.table thead {
+  vertical-align: top;
+  background: #ecf0f1;
+  text-align: left;
+}
+.table.table--bordered tr {
+  border-bottom: 1px solid #95a5a6;
+}
+.table.table--horizontal td, .table.table--horizontal th {
+  border-left-width: 0;
+  border-bottom: 1px solid #95a5a6;
+}
+.table.table--striped tbody tr:nth-child(odd) {
+  background: #f5f7f7;
+}
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/*--------------------------------------------------
+   |					       M E N U S 							     |
+   --------------------------------------------------
+*/
+.menu .heading {
+  display: inline-block;
+  padding: .6em .8em;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #95a5a6;
+}
+.menu ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+}
+.menu ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -4px;
+  list-style-type: none;
+}
+.menu ul li:first-child {
+  margin-left: 0;
+}
+.menu ul li a {
+  display: block;
+  padding: .6em .8em;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+.menu ul li a:hover {
+  background: #ecf0f1;
+}
+.menu ul li a.active {
+  background: #bdc3c7;
+}
+.menu.menu--bordered {
+  display: inline-block;
+  border: 1px solid #95a5a6;
+}
+
+.menu--vertical {
+  display: inline-block;
+}
+.menu--vertical .heading {
+  display: block;
+  padding: .6em .8em;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #95a5a6;
+  text-decoration: none;
+  border-bottom: 1px solid #95a5a6;
+}
+.menu--vertical ul {
+  margin: 0;
+  padding: 0;
+}
+.menu--vertical ul li {
+  display: block;
+  list-style-type: none;
+}
+.menu--vertical ul li a {
+  display: block;
+  padding: .6em .8em;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+.menu--vertical ul li a:hover {
+  background: #ecf0f1;
+}
+.menu--vertical ul li a.active {
+  background: #bdc3c7;
+}
+.menu--vertical.menu--vertical-bordered {
+  display: inline-block;
+  border: 1px solid #95a5a6;
+}
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 body {
