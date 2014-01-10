@@ -18,7 +18,7 @@ O __Opus Front__ é composto por diversos módulos, visando otimizar e influir o
 
 Os módulos disponíveis são:
 
-```bash
+{% highlight bash linenos=table %}
 base.css
 grid.css
 forms.css
@@ -26,7 +26,7 @@ tables.css
 menus.css
 buttons.css
 messages.css
-```
+{% endhighlight %}
 
 No menu ao lado, você pode navegar até o módulo desejado e ver mais instruções.
 
@@ -40,7 +40,7 @@ Usando __BEM__, temos um código legível e com fácil reconhecimento da estrutu
 
 Como exemplo, o HTML de um carrossel seria algo próximo a isso:
 
-```html
+{% highlight html linenos=table %}
 <div class="carrossel">
     <div class="carrossel__wrapper">
         <div class="carrossel__slide--ativo"></div>
@@ -48,7 +48,7 @@ Como exemplo, o HTML de um carrossel seria algo próximo a isso:
         <div class="carrossel__slide"></div>
     </div>
 </div>
-```
+{% endhighlight %}
 
 O `carrossel` é o bloco do componente, `__wrapper` e `__slide` são os elementos abaixo do `carrossel`, e `--ativo` é o modificador que indica que aquele slide é o ativo no momento.
 
@@ -58,19 +58,19 @@ Nesta versão inicial, ainda não temos componentes com uma estrutura mais elabo
     <p>Ocorreu um erro. Tente novamente</p>
 </div>
 
-```html
+{% highlight html linenos=table %}
 <div class="message message--error">
     <p>Ocorreu um erro. Tente novamente</p>
 </div>
-```
+{% endhighlight %}
 
 <br>
 
 ## Compatibilidade
 
-Seguindo a convenção de suporte no desenvolvimento front-end, o __Opus Front__ será compatível com as duas versões anteriores às versões atuais dos browsers atuais:
+O __Opus Front__ é compatível com os seguintes browsers:
 
-- Internet Explorer 8+
+- Internet Explorer 9+
 - Chrome 29+
 - Firefox 22+
 - Opera 10+

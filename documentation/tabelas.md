@@ -287,7 +287,7 @@ O __Opus Front__ traz alguns tipos de tabelas já prontos, bastanto apenas decla
 
 <h3>Tabela listrada</h3>
 
-<table class="table table--stripped">
+<table class="table table--striped">
     <thead>
         <tr>
             <th>#</th>
@@ -331,7 +331,7 @@ O __Opus Front__ traz alguns tipos de tabelas já prontos, bastanto apenas decla
 </table>
 
 {% highlight html linenos=table %}
-<table class="table table--stripped">
+<table class="table table--striped">
     <thead>
         <tr>
             <th>#</th>

@@ -29,6 +29,6 @@ Para manter o framework enxuto, a fonte é incorporada via @import a partir do C
 
 Para esconder elementos, você pode inserir o atributo `hidden` no elemento desejado.
 
-```html
+{% highlight html linenos=table %}
 <div class="conteudo" hidden></div>
-```
+{% endhighlight %}
