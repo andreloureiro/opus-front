@@ -12,3 +12,7 @@ body {
 [hidden] {
   display: none !important;
 }
+
+img {
+  min-width: 100%;
+}
