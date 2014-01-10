@@ -19,20 +19,20 @@
 		text-align: left;
 	}
 
-	&.table-bordered {
+	&.table--bordered {
 		tr {
 			border-bottom: 1px solid $table-border-color;
 		}
 	}
 
-	&.table-horizontal {
+	&.table--horizontal {
 		td, th {
 			border-left-width: 0;
 			border-bottom: 1px solid $table-border-color;
 		}
 	}
 
-	&.table-striped {
+	&.table--striped {
 		tbody {
 			tr:nth-child(odd) {
 				background: $table-stripped-background;
@@ -40,4 +40,3 @@
 		}
 	}
 }
-				

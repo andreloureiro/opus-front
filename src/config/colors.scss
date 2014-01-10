@@ -68,3 +68,27 @@ $input-readonly-background: darken($white, 5%);
 $table-border-color: $gray;
 $table-thead-background: $silver;
 $table-stripped-background: lighten($silver, 3%);
+
+
+// Menus
+
+$menu-heading-color: $gray;
+$menu-link-color: $black;
+$menu-link-hover-background: $silver;
+$menu-link-active-background: $silver-dark;
+$menu-border-color: $gray;
+
+
+// Messages
+
+$message-background: $blue;
+$message-border-color: darken($blue, 2%);
+
+$message-success-background: $green;
+$message-success-border-color: darken($green, 2%);
+
+$message-error-background: $red;
+$message-error-border-color: darken($red, 2%);
+
+$message-warning-background: $yellow;
+$message-warning-border-color: darken($yellow, 2%);

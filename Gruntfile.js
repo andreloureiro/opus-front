@@ -75,29 +75,28 @@ module.exports = function (grunt) {
                         'src/messages/messages.css']
                     },
                     {
-                        'build/base.min.css' : 'src/base/base.css'
+                        'build/base.min.css' : ['bower_components/normalize-css/normalize.css', 'src/base/base.css']
                     },
                     {
-                        'build/grid.min.css' : 'src/grid/grid.css'
+                        'build/grid.min.css' : ['bower_components/normalize-css/normalize.css', 'src/grid/grid.css']
                     },
                     {
-                        'build/buttons.min.css' : 'src/buttons/buttons.css'
+                        'build/buttons.min.css' : ['bower_components/normalize-css/normalize.css', 'src/buttons/buttons.css']
                     },
                     {
-                        'build/forms.min.css' : 'src/forms/forms.css'
+                        'build/forms.min.css' : ['bower_components/normalize-css/normalize.css', 'src/forms/forms.css']
                     },
                     {
-                        'build/tables.min.css' : 'src/tables/tables.css'
+                        'build/tables.min.css' : ['bower_components/normalize-css/normalize.css', 'src/tables/tables.css']
                     },
                     {
-                        'build/menus.min.css' : 'src/menus/menus.css'
+                        'build/menus.min.css' : ['bower_components/normalize-css/normalize.css', 'src/menus/menus.css']
                     },
                     {
-                        'build/messages.min.css' : 'src/messages/messages.css'
+                        'build/messages.min.css' : ['bower_components/normalize-css/normalize.css', 'src/messages/messages.css']
                     }
                 ]
             }
-            
         },
 
         watch : {
@@ -145,8 +144,9 @@ module.exports = function (grunt) {
                     'bower_components/normalize-css/normalize.css', 
                     'src/base/base.css', 
                     'src/grid/grid.css', 
-                    'src/buttons/buttons.scss', 
-                    'src/forms/forms.css', 
+                    'src/buttons/buttons.css', 
+                    'src/forms/forms.css',
+                    'src/tables/tables.css',
                     'src/menus/menus.css', 
                     'src/messages/messages.css'
                     ],

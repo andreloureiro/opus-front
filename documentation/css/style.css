@@ -1,0 +1,79 @@
+body {
+	border-top: 5px solid red;
+}
+
+.title-area {
+	text-align: center;
+}
+
+.title-area p {
+	color: gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #E74C3C;
+	font-weight: 100;
+}
+
+a {
+	color: #E74C3C;
+}
+
+.menu-content {
+	width: 90%;
+	box-sizing: border-box;
+}
+
+.menu--vertical ul li a.active {
+	color: white;
+	background: #E74C3C;
+}
+
+.content h2, .content h3, .content h4 {
+	margin-top: 2em;
+}
+
+.grid-test [class *= 'grid-unit'] {
+	margin-bottom: 10px;
+	background-image: linear-gradient(to right, #DDD, #EEE);
+	text-align: center;
+}
+
+pre {
+	box-sizing: border-box;
+	padding: .7em;
+	background: #EEE;
+	font-family: 'Open Sans', monospace;
+}
+
+p code {
+	box-sizing: border-box;
+	padding: .2em .6em;
+	background: #EEE;
+	border: 1px solid #DDD;
+	font-size: .8em;
+	font-family: 'Open Sans', monospace;
+}
+
+strong {
+	color: #E74C3C;
+	font-weight: 400;
+}
+
+.grid-ex {
+}
+.grid-ex [class *= 'grid-unit'] {
+	padding: 20px;
+	text-align: center;
+	color: white;
+	text-shadow: 0 2 0 #000;
+}
+.grid-ex .menu {
+	background: #3498db;
+}
+.grid-ex .content {
+	background: #E74C3C;
+}
+.grid-ex .sidebar {
+	background: #f1c40f;
+}

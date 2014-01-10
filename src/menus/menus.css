@@ -1,10 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/*--------------------------------------------------
+   |					       M E N U S 							     |
+   --------------------------------------------------
+*/
 .menu .heading {
   display: inline-block;
   padding: .6em .8em;
   margin: 0;
   text-transform: uppercase;
   font-size: .8em;
-  color: #777;
+  color: #95a5a6;
 }
 .menu ul {
   display: inline-block;
@@ -25,17 +34,17 @@
   display: block;
   padding: .6em .8em;
   text-decoration: none;
-  color: #555;
+  color: #1e1e1e;
 }
 .menu ul li a:hover {
-  background: #EFEFEF;
+  background: #ecf0f1;
 }
 .menu ul li a.active {
-  color: #111;
+  background: #bdc3c7;
 }
 .menu.menu--bordered {
   display: inline-block;
-  border: 1px solid #555;
+  border: 1px solid #95a5a6;
 }
 
 .menu--vertical .heading {
@@ -44,9 +53,9 @@
   margin: 0;
   text-transform: uppercase;
   font-size: .8em;
-  color: #777;
+  color: #95a5a6;
   text-decoration: none;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #95a5a6;
 }
 .menu--vertical ul {
   margin: 0;
@@ -60,15 +69,15 @@
   display: block;
   padding: .6em .8em;
   text-decoration: none;
-  color: #555;
+  color: #1e1e1e;
 }
 .menu--vertical ul li a:hover {
-  background: #EFEFEF;
+  background: #ecf0f1;
 }
 .menu--vertical ul li a.active {
-  color: #111;
+  background: #bdc3c7;
 }
 .menu--vertical.menu--vertical-bordered {
   display: inline-block;
-  border: 1px solid #555;
+  border: 1px solid #95a5a6;
 }

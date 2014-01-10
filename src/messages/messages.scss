@@ -1,8 +1,17 @@
+@import "../config/colors.scss";
+@import "../config/font.scss";
+
+/*--------------------------------------------------
+   |					     M E S S A G E S						     |
+   --------------------------------------------------
+*/
+
 .message {
 	display: block;
 	width: 100%;
 	margin-bottom: 1em;
-	background: blue;
+	background: $message-background;
+	border: 2px solid $message-border-color;
 	text-align: center;
 
 	p {
@@ -12,18 +21,21 @@
 	}
 
 	&.message--success {
-		background: green;
+		background: $message-success-background;
+		border: 2px solid $message-success-border-color;
 	}
 
 	&.message--error {
-		background: red;
+		background: $message-error-background;
+		border: 2px solid $message-error-border-color;
 	}
 
 	&.message--warning {
-		background: yellow;
+		background: $message-warning-background;
+		border: 2px solid $message-warning-border-color;
 
 		p {
-			color: #333
+			color: $black
 		}
 	}
 }

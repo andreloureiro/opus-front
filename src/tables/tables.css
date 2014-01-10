@@ -17,13 +17,13 @@
   background: #ecf0f1;
   text-align: left;
 }
-.table.table-bordered tr {
+.table.table--bordered tr {
   border-bottom: 1px solid #95a5a6;
 }
-.table.table-horizontal td, .table.table-horizontal th {
+.table.table--horizontal td, .table.table--horizontal th {
   border-left-width: 0;
   border-bottom: 1px solid #95a5a6;
 }
-.table.table-striped tbody tr:nth-child(odd) {
+.table.table--striped tbody tr:nth-child(odd) {
   background: #f5f7f7;
 }
