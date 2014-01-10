@@ -10,6 +10,8 @@ O grid utilizado pelo __Opus Front__ tem base no [Pure CSS](). Ao invés de util
 
 Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, exemplos de utilização do grid:
 
+<br>
+
 <h3>2/2</h3>
 <div class="grid-test grid">
     <div class="grid-unit-1-2">
@@ -30,6 +32,8 @@ Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, ex
     </div>        
 </div>
 {% endhighlight %}
+
+<br>
 
 <h3>3/3</h3>
 <div class="grid-test grid">
@@ -67,6 +71,8 @@ Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, ex
     </div>
 </div>
 {% endhighlight %}
+
+<br>
 
 <div class="grid-test">
     <h3>4/4</h3>
@@ -122,6 +128,8 @@ Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, ex
     </div>
 </div>
 {% endhighlight %}
+
+<br>
 
 <div class="grid-test">
     <h3>5/5</h3>
@@ -193,6 +201,8 @@ Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, ex
     </div>
 </div>
 {% endhighlight %}
+
+<br>
 
 <h3>6/6</h3>
 <div class="grid-test grid">
@@ -278,6 +288,8 @@ Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, ex
     </div>
 </div>
 {% endhighlight %}
+
+<br>
 
 <h3>7/7</h3>
 <div class="grid-test grid">
@@ -379,6 +391,8 @@ Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, ex
     </div>
 </div>
 {% endhighlight %}
+
+<br>
 
 <h3>8/8</h3>
 <div class="grid-test grid">
@@ -496,6 +510,8 @@ Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, ex
     </div>
 </div>
 {% endhighlight %}
+
+<br>
 
 <h3>12/12</h3>
 <div class="grid-test grid">
@@ -677,6 +693,8 @@ Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, ex
     </div>
 </div>
 {% endhighlight %}
+
+<br>
 
 <h3>24/24</h3>
 <div class="grid-test grid">
@@ -1050,6 +1068,8 @@ Você pode trabalhar com frações 2, 3, 4, 5, 6, 7, 8, 12 e 24 avos. Abaixo, ex
     </div>
 </div>
 {% endhighlight %}
+
+<br>
 
 Você pode usar a combinação de quantas divs precisar.
 

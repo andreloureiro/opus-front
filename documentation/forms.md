@@ -8,6 +8,8 @@ class: Forms
 
 O __Opus Front__ possui diferentes formatos de formulário já definidos para serem aplicados a diversos casos de uso.
 
+<br>
+
 ### Formulário Vertical
 
 <form action="#" class="form">
@@ -33,6 +35,8 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
     </fieldset>
 </form>
 {% endhighlight %}
+
+<br>
 
 ### Formulário Horizontal
 
@@ -62,6 +66,8 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
 </form>
 {% endhighlight %}
 
+<br>
+
 ### Formulário Alinhado
 
 <form action="#" class="form form--aligned">
@@ -83,8 +89,8 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
             <input type="password" id="password">
         </div>
         <div class="form-group-buttons">
-            <label for="accept">
-                <input type="checkbox"> Li e aceito os termos de serviços
+            <label for="accept-inline">
+                <input type="checkbox" id="accept-inline"> Li e aceito os termos de serviços
             </label>
             <button type="submit" class="button">Enviar</button>
         </div>
@@ -119,6 +125,8 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
     </fieldset>
 </form>
 {% endhighlight %}
+
+<br>
 
 ### Formulário Multi-Coluna
 
@@ -190,9 +198,13 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
 </form>
 {% endhighlight %}
 
+<br>
+
 ## Inputs
 
 Além dos formulários, o __Opus Front__ trás três tipos diferentes de estilos para inputs. Basta apenas acrescentar o atributo desejado:
+
+<br>
 
 ### Input obrigatório
 
@@ -206,6 +218,8 @@ Além dos formulários, o __Opus Front__ trás três tipos diferentes de estilos
 </form>
 {% endhighlight %}
 
+<br>
+
 ### Input desabilitado
 
 <form action="#" class="form">
@@ -217,6 +231,8 @@ Além dos formulários, o __Opus Front__ trás três tipos diferentes de estilos
     <input type="text" placeholder="Este é um input desabilitado" disabled>
 </form>
 {% endhighlight %}
+
+<br>
 
 ### Input somente leitura
 

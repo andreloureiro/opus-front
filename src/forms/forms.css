@@ -79,14 +79,10 @@ body {
 .form.form--aligned fieldset .form-group-buttons {
   display: block;
   width: 100%;
-  margin-left: 10em;
 }
 .form.form--aligned fieldset .form-group-buttons label {
   display: block;
   vertical-align: middle;
-  width: 10em;
-  margin-bottom: 1em;
-  text-align: right;
 }
 .form.form--aligned fieldset .form-group-buttons input[type=text], .form.form--aligned fieldset .form-group-buttons input[type=email], .form.form--aligned fieldset .form-group-buttons input[type=password] {
   display: inline-block;

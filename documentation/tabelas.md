@@ -8,6 +8,8 @@ class: Tabelas
 
 O __Opus Front__ traz alguns tipos de tabelas já prontos, bastanto apenas declarar a classe de CSS desejada no elemento ```table```.
 
+<br>
+
 ### Tabela comum
 
 <table class="table">
@@ -97,6 +99,7 @@ O __Opus Front__ traz alguns tipos de tabelas já prontos, bastanto apenas decla
     </tbody>
 </table>
 {% endhighlight %}
+<br>
 
 <h3>Tabela horizontal</h3>
 
@@ -188,6 +191,8 @@ O __Opus Front__ traz alguns tipos de tabelas já prontos, bastanto apenas decla
 </table>
 {% endhighlight %}
 
+<br>
+
 <h3>Tabela com bordas</h3>
 
 <table class="table table--bordered">
@@ -277,6 +282,8 @@ O __Opus Front__ traz alguns tipos de tabelas já prontos, bastanto apenas decla
     </tbody>
 </table>
 {% endhighlight %}
+
+<br>
 
 <h3>Tabela listrada</h3>
 

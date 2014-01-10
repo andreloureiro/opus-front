@@ -10,6 +10,8 @@ O __Opus Front__ é um framework CSS simples, modularizado, focado em um código
 
 O objetivo do desenvolvimento do __Opus Front__ é auxiliar na montagem de layouts de projetos web, facilitar a criação de protótipos e padronizar o desenvolvimento front-end na empresa.
 
+<br>
+
 ## Módulos
 
 O __Opus Front__ é composto por diversos módulos, visando otimizar e influir o mínimo possível no carregamento de assets. Você pode baixar apenas os módulos que irá utilizar, ou baixar o framework completo.
@@ -27,6 +29,8 @@ messages.css
 ```
 
 No menu ao lado, você pode navegar até o módulo desejado e ver mais instruções.
+
+<br>
 
 ## Código semântico
 
@@ -59,6 +63,8 @@ Nesta versão inicial, ainda não temos componentes com uma estrutura mais elabo
     <p>Ocorreu um erro. Tente novamente</p>
 </div>
 ```
+
+<br>
 
 ## Compatibilidade
 

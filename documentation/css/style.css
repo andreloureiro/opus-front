@@ -2,12 +2,8 @@ body {
 	border-top: 5px solid red;
 }
 
-.title-area {
-	text-align: center;
-}
-
-.title-area p {
-	color: gray;
+.title-desc {
+	color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,6 +13,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	color: #E74C3C;
+}
+
+header {
+	margin-bottom: 1em;
+	background: rgba(40, 40, 40, 1);
 }
 
 .menu-content {
@@ -30,7 +31,7 @@ a {
 }
 
 .content h2, .content h3, .content h4 {
-	margin-top: 2em;
+	margin-top: 0;
 }
 
 .grid-test [class *= 'grid-unit'] {
