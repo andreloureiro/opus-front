@@ -8,6 +8,12 @@
 	Hide every element that has the hidden attribute
 */
 
+* {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+
 [hidden] {
 	display: none !important;
 }
@@ -15,5 +21,4 @@
 img {
 	min-width: 100%;
 }
-
 
