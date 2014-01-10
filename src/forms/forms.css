@@ -78,7 +78,7 @@ body {
 }
 .form.form--aligned fieldset .form-group-buttons {
   display: block;
-  width: 100%;
+  margin-left: 10em;
 }
 .form.form--aligned fieldset .form-group-buttons label {
   display: block;
