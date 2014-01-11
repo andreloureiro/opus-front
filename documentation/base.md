@@ -9,7 +9,7 @@ class: Base
 
 ### Normalize
 
-A base do __Opus Front__ é constituída pelo [Normalize]().
+A base do __Opus Front__ é constituída pelo [Normalize](http://necolas.github.io/normalize.css/).
 
 Para quem não conhece, o __Normalize__ é um reset moderno para CSS, que além de resolver inconsistências de comportamento de layout de elementos crossbrowser, aplica um estilo mínimo aos elementos.
 

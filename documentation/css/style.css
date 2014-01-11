@@ -1,27 +1,36 @@
 header {
   background: rgba(40, 40, 40, 1);
-  border-top: 4px solid rgba(149, 165, 166, 1);
+  border-middle: 4px solid rgba(231, 76, 60, 1);
 }
 
 body {}
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgba(149, 165, 166, 1);
+  color: rgba(231, 76, 60, 1);
   font-weight: 100;
 }
 
 strong {
   font-weight: 400;
-  color: rgba(149, 165, 166, 1);
+  color: rgba(231, 76, 60, 1);
 }
 
 a {
-  color: rgba(149, 165, 166, 1);
+  color: rgba(231, 76, 60, 1);
 }
 
 pre {
   padding: .6em;
   background: rgba(240, 240, 240, 1);
+  font-size: .8em;
+}
+
+p code {
+  padding: .2em .6em;
+  background: #F0F0F0;
+  font-size: .8em;
+  border: 1px solid gainsboro;
+  word-wrap: nowrap;
 }
 
 .title-desc {
@@ -34,8 +43,64 @@ pre {
 }
 
 .menu-content ul li a.active {
-  background: rgba(149, 165, 166, 1);
+  background: rgba(231, 76, 60, 1);
   color: white;
+}
+
+.graph {
+  text-align: center;
+}
+
+.graph .total {
+  font-weight: 600;
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: 80px;
+  font-size: 0;
+}
+
+.chart > div {
+  display: inline-table;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.chart > div > p {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-size: 10px;
+}
+
+.chart .base {
+  background: rgba(231, 76, 60, 1);
+}
+
+.chart .grid {
+  background: rgba(230, 126, 34, 1);
+}
+
+.chart .buttons {
+  background: rgba(241, 196, 15, 1);
+}
+
+.chart .forms {
+  background: rgba(52, 152, 219, 1);
+}
+
+.chart .tables {
+  background: rgba(46, 204, 113, 1);
+}
+
+.chart .menus {
+  background: rgba(52, 73, 94, 1);
+}
+
+.chart .messages {
+  background: rgba(41, 128, 185, 1);
 }
 
 .grid-test [class *= 'grid-unit'] {
@@ -56,7 +121,7 @@ pre {
 }
 
 .grid-ex .content {
-  background: rgba(149, 165, 166, 1);
+  background: rgba(231, 76, 60, 1);
 }
 
 .grid-ex .sidebar {
