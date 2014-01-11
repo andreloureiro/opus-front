@@ -94,6 +94,27 @@ module.exports = function (grunt) {
                     },
                     {
                         'build/messages.min.css' : ['bower_components/normalize-css/normalize.css', 'src/messages/messages.css']
+                    },
+                    {
+                        'individual_build/base.min.css' : ['bower_components/normalize-css/normalize.css', 'src/base/base.css']
+                    },
+                    {
+                        'individual_build/grid.min.css' : 'src/grid/grid.css'
+                    },
+                    {
+                        'individual_build/buttons.min.css' : 'src/buttons/buttons.css'
+                    },
+                    {
+                        'individual_build/forms.min.css' : 'src/forms/forms.css'
+                    },
+                    {
+                        'individual_build/tables.min.css' : 'src/tables/tables.css'
+                    },
+                    {
+                        'individual_build/menus.min.css' : 'src/menus/menus.css'
+                    },
+                    {
+                        'individual_build/messages.min.css' : 'src/messages/messages.css'
                     }
                 ]
             }
