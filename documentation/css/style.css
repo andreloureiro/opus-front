@@ -105,7 +105,11 @@ p code {
 
 .grid-test [class *= 'grid-unit'] {
   margin-bottom: .5em;
+  background: #EEE;
   background-image: linear-gradient(to right, #EEE, #DDD);
+  border-left: 4px solid rgba(231, 76, 60, 1);
+  font-size: 12px;
+  text-align: center;
 }
 
 .grid-ex {
