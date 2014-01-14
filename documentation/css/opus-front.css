@@ -462,7 +462,6 @@ body {
   display: flex;
 }
 .grid [class*="grid-unit"] {
-  display: inline-block;
   *display: inline;
   vertical-align: top;
   box-sizing: border-box;

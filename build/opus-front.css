@@ -454,7 +454,6 @@ body {
    --------------------------------------------------
 */
 .grid {
-  *display: block;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
@@ -463,7 +462,6 @@ body {
 }
 .grid [class*="grid-unit"] {
   display: inline-block;
-  *display: inline;
   vertical-align: top;
   box-sizing: border-box;
   padding-left: 0.625em;
