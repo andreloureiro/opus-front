@@ -454,7 +454,6 @@ body {
    --------------------------------------------------
 */
 .grid {
-  *display: block;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
@@ -462,7 +461,7 @@ body {
   display: flex;
 }
 .grid [class*="grid-unit"] {
-  *display: inline;
+  display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
   padding-left: 0.625em;
@@ -470,6 +469,10 @@ body {
   word-spacing: normal;
   text-rendering: auto;
   zoom: 1;
+  margin-left: -0.3125em \0;
+}
+.grid [class*="grid-unit"]:first-child {
+  padding-left: 0.9375em \0;
 }
 .grid [class*="grid-unit"]:last-child {
   padding-right: 0.625em;
