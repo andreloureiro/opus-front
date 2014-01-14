@@ -150,7 +150,7 @@ module.exports = function(grunt) {
                 src: ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/messages/messages.css'],
                 dest: 'build/messages.css'
             },
-            messages: {
+            fonts: {
                 src: ['src/intro.css', 'bower_components/normalize-css/normalize.css', 'src/fonts/fonts.css'],
                 dest: 'build/fonts.css'
             },
