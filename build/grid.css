@@ -460,7 +460,7 @@ th {
 }
 .grid [class*="grid-unit"]:first-child {
   padding-left: 0;
-  margin-left: -4px;
+  margin-left: -0.25em;
 }
 .grid .grid-unit-1 {
   width: 100%;

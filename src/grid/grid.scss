@@ -24,13 +24,8 @@
 		margin-left: -0.3125em \0; // IE9 Fix
 
 		&:first-child {
-			// padding-left: 0.9375em \0; //IE9 Fix
 			padding-left: 0;
-			margin-left: -4px;
-		}
-
-		&:last-child {
-			// padding-right: 0.625em;
+			margin-left: -0.25em;
 		}
 	}
 
