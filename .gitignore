@@ -2,4 +2,4 @@ bower_components
 node_modules
 .sass-cache
 documentation
-build/**/*.gz
+build/*.gz
