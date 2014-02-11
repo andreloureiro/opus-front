@@ -1,18 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
 /*--------------------------------------------------
    |					      	G R I D 							     |
    --------------------------------------------------
 */
 .grid {
-  display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-  display: -ms-flexbox;
-  -ms-flex-flow: row wrap;
-  display: flex;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 100%;
 }
 .grid [class*="grid-unit"] {
   display: inline-block;

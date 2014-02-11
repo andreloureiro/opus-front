@@ -418,11 +418,6 @@ table {
     border-spacing: 0;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
 /*--------------------------------------------------
    |                  B A S E                    |
    --------------------------------------------------
@@ -442,11 +437,6 @@ html, body {
 
 img {
   max-width: 100%;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /*--------------------------------------------------
@@ -667,11 +657,6 @@ body {
   width: 95.83333%;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
 /*--------------------------------------------------
    |                B U T T O N S                  |
    --------------------------------------------------
@@ -730,11 +715,6 @@ body {
 }
 .button.button--extra-large {
   font-size: 140%;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /*--------------------------------------------------
@@ -869,11 +849,6 @@ body {
   background: #f5f7f7;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
 /*--------------------------------------------------
    |                 M E N U S                   |
    --------------------------------------------------
@@ -956,11 +931,6 @@ body {
   border: 1px solid #95a5a6;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
 /*--------------------------------------------------
    |               M E S S A G E S                 |
    --------------------------------------------------
@@ -995,3 +965,6 @@ body {
 }
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Coustard:400,900|EB+Garamond|Droid+Serif:400,700,400italic,700italic|Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Dancing+Script:400,700|Oswald:400,300,700|Alice|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,700,300italic);
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}

@@ -316,18 +316,18 @@ font-style: italic;
 <div class="dancing-script">
     <p class="normal">
         Lorem ipsum dolor sit amet
+    </p>
 {% highlight css %}
 font-family: 'Dancing Script', cursive;
 font-weight: 400;
 {% endhighlight %}
-    </p>
     <p class="bold">
         Lorem ipsum dolor sit amet
+    </p>
 {% highlight css %}
 font-family: 'Dancing Script', cursive;
 font-weight: 700;
 {% endhighlight %}
-    </p>
 </div>
 
 <br>

@@ -1,13 +1,13 @@
-/*--------------------------------------------------
+/* ===========================================================================
 
-		Opus Front
-		A simple CSS framework for use in Opus Software projects
+   |{}| Opus Front
+        Simple and modularized CSS framework
+   
+   Version : 0.1.0 Alpha
 
-		Version : Alpha 0.1.0
+   http://github.com/andreloureiro/opus-front
 
-		http://github.com/andreloureiro/opus-front
-
---------------------------------------------------*/
+   =========================================================================== */
 
 
 
@@ -358,6 +358,7 @@ html input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
+    -moz-box-sizing: border-box;
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
 }
@@ -370,8 +371,7 @@ input[type="radio"] {
 
 input[type="search"] {
     -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
+    -moz-box-sizing: content-box; /* 2 */
     box-sizing: content-box;
 }
 
@@ -416,11 +416,6 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /*--------------------------------------------------

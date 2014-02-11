@@ -1,6 +1,6 @@
 {
   "name": "OpusFront",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": "https://github.com/andreloureiro/opus-front",
   "devDependencies": {
     "grunt-cli": "latest",
@@ -13,6 +13,8 @@
     "grunt": "~0.4.2",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-clean": "~0.5.0"
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-filesize": "*",
+    "grunt-contrib-compress": "~0.6.1"
   }
 }
