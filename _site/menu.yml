@@ -1,7 +1,0 @@
-item
-	home
-		title: Home
-		url: /
-	grid
-		title: Grid
-		url: /grid.html

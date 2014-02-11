@@ -435,23 +435,32 @@ th {
   padding: 0;
 }
 
-/*--------------------------------------------------
-   |					      	B A S E 							     |
-   --------------------------------------------------
-
-	Hide every element that has the hidden attribute
-*/
-html, body {
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+.table {
+  border: 1px solid #95a5a6;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
 }
-
-[hidden] {
-  display: none !important;
+.table td, .table th {
+  border-left: 1px solid #95a5a6;
+  overflow: visible;
+  padding: .4em .6em;
 }
-
-img {
-  max-width: 100%;
+.table td:first-child, .table th:first-child {
+  border-left-width: 0;
+}
+.table thead {
+  vertical-align: top;
+  background: #ecf0f1;
+  text-align: left;
+}
+.table.table--bordered tr {
+  border-bottom: 1px solid #95a5a6;
+}
+.table.table--horizontal td, .table.table--horizontal th {
+  border-left-width: 0;
+  border-bottom: 1px solid #95a5a6;
+}
+.table.table--striped tbody tr:nth-child(odd) {
+  background: #f5f7f7;
 }
