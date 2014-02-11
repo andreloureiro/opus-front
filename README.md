@@ -2,9 +2,9 @@
 
 > Simple and modularized CSS framework.
 
-This project is based on [Pure CSS](#) and [Normalize](#). It's a light framework that weights 7.99kb minified and gzipped.
+This project is based on [Pure CSS](http://purecss.io/) and [Normalize](http://necolas.github.io/normalize.css/). It's a light framework that weights 7.99kb minified and gzipped.
 
-If you just need some module, this is the ones available:
+If you need, these are the available modules:
 
 - Base
 - Buttons
@@ -14,4 +14,4 @@ If you just need some module, this is the ones available:
 - Messages
 - Tables
 
-You can fork it and make the changes you need for your project. The documentation is available [here](#) (pt-BR).
+You can fork it and make the changes you need for your project. The documentation is available [here](http://andreloureiro.github.io/opus-front/) (pt-BR).
