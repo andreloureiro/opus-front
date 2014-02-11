@@ -2,7 +2,7 @@
 
 > Simple and modularized CSS framework.
 
-This project is based on [Pure CSS](http://purecss.io/) and [Normalize](http://necolas.github.io/normalize.css/). It's a light framework that weights 7.99kb minified and gzipped.
+This project is based on [Pure CSS](http://purecss.io/) and [Normalize](http://necolas.github.io/normalize.css/). It's a light framework that weights 2.6kb (minified and gzipped).
 
 If you need, these are the available modules:
 
