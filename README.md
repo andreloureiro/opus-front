@@ -15,3 +15,5 @@ If you need, these are the available modules:
 - Tables
 
 You can fork it and make the changes you need for your project. The documentation is available [here](http://andreloureiro.github.io/opus-front/) (pt-BR).
+
+[MIT License](http://andrel.mit-license.org)
