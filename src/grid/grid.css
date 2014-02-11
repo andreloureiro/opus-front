@@ -13,6 +13,7 @@
   vertical-align: top;
   box-sizing: border-box;
   padding-left: 0.625em;
+  margin-left: -0.25em;
   letter-spacing: normal;
   word-spacing: normal;
   text-rendering: auto;
@@ -20,10 +21,8 @@
   margin-left: -0.3125em \0;
 }
 .grid [class*="grid-unit"]:first-child {
-  padding-left: 0.9375em \0;
-}
-.grid [class*="grid-unit"]:last-child {
-  padding-right: 0.625em;
+  padding-left: 0;
+  margin-left: -4px;
 }
 .grid .grid-unit-1 {
   width: 100%;

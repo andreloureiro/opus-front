@@ -1,13 +1,13 @@
-/*--------------------------------------------------
+/* ===========================================================================
 
-    Opus Front
-    A simple CSS framework for use in Opus Software projects
+   |{}| Opus Front
+        Simple and modularized CSS framework
+   
+   Version : 0.1.0 Alpha
 
-    Version : Alpha 0.1.0
+   http://github.com/andreloureiro/opus-front
 
-    http://github.com/andreloureiro/opus-front
-
---------------------------------------------------*/
+   =========================================================================== */
 
 
 
@@ -358,6 +358,7 @@ html input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
+    -moz-box-sizing: border-box;
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
 }
@@ -370,8 +371,7 @@ input[type="radio"] {
 
 input[type="search"] {
     -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
+    -moz-box-sizing: content-box; /* 2 */
     box-sizing: content-box;
 }
 
@@ -444,17 +444,18 @@ img {
    --------------------------------------------------
 */
 .grid {
-  display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-  display: -ms-flexbox;
-  -ms-flex-flow: row wrap;
-  display: flex;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 100%;
 }
 .grid [class*="grid-unit"] {
   display: inline-block;
   vertical-align: top;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 0.625em;
+  margin-left: -0.25em;
   letter-spacing: normal;
   word-spacing: normal;
   text-rendering: auto;
@@ -462,10 +463,8 @@ img {
   margin-left: -0.3125em \0;
 }
 .grid [class*="grid-unit"]:first-child {
-  padding-left: 0.9375em \0;
-}
-.grid [class*="grid-unit"]:last-child {
-  padding-right: 0.625em;
+  padding-left: 0;
+  margin-left: -4px;
 }
 .grid .grid-unit-1 {
   width: 100%;
@@ -962,9 +961,4 @@ img {
 }
 .message.message--warning p {
   color: #1e1e1e;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Coustard:400,900|EB+Garamond|Droid+Serif:400,700,400italic,700italic|Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Dancing+Script:400,700|Oswald:400,300,700|Alice|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Open+Sans+Condensed:300,700,300italic);
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }

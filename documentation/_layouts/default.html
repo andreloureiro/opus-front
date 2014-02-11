@@ -18,28 +18,28 @@
 
       <div class="container">
         
-      <div class="grid">
-        <div class="grid-unit-1-5">
-          <nav class="menu--vertical menu--vertical-bordered menu-content">
-            <ul>
-              <li>
-                <p href="#" class="heading">Seções</p>
-              </li>
-              {% for item in site.data.menu %}
-              <li>
-                <a href="{{ item.url }}" class="{% if item.title == page.class %}{{ "active" }}{% endif %}">{{ item.title }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-          </nav>
+        <div class="grid">
+          <div class="grid-unit-1-5">
+            <nav class="menu--vertical menu--vertical-bordered menu-content">
+              <ul>
+                <li>
+                  <p href="#" class="heading">Seções</p>
+                </li>
+                {% for item in site.data.menu %}
+                <li>
+                  <a href="{{ item.url }}" class="{% if item.title == page.class %}{{ "active" }}{% endif %}">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </nav>
+          </div>
+
+          <div class="grid-unit-4-5 content">
+
+            {{ content }}
+
+          </div>
         </div>
-
-        <div class="grid-unit-4-5 content">
-
-          {{ content }}
-
-        </div>
-      </div>
 
       </div>
 
