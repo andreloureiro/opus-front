@@ -1,0 +1,41 @@
+@import "../config/colors.scss";
+
+/* ===========================================================================
+
+   |{}| Messages
+   
+   =========================================================================== */
+
+.message {
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
+	background: $message-background;
+	border: 2px solid $message-border-color;
+	text-align: center;
+
+	p {
+		margin: 0;
+		padding: .6em;
+		color: white;
+	}
+
+	&.message--success {
+		background: $message-success-background;
+		border: 2px solid $message-success-border-color;
+	}
+
+	&.message--error {
+		background: $message-error-background;
+		border: 2px solid $message-error-border-color;
+	}
+
+	&.message--warning {
+		background: $message-warning-background;
+		border: 2px solid $message-warning-border-color;
+
+		p {
+			color: $black
+		}
+	}
+}

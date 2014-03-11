@@ -1,0 +1,76 @@
+@import "../config/colors";
+
+/* ===========================================================================
+
+   |{}| Buttons
+   
+   =========================================================================== */
+
+
+.button {
+	display: inline-block;
+	vertical-align: top;
+	padding: .4em 1em;
+	background: $button-background;
+	border: none;
+	border-top: 0px solid transparent;
+	border-bottom: 2px solid darken($silver, 10%);
+
+	text-decoration: none;
+	color: $black;
+	font-weight: 400;
+
+	outline: none;
+
+	&:active {
+		border-top: 2px solid transparent;
+		border-bottom: 0px;
+	}
+
+	&.button--disabled {
+		background: $button-disabled-background;
+		color: $button-disabled-color;
+		border: none;
+		cursor: not-allowed; 
+	}
+
+	&.button--active {
+		background: $button-active-background;
+		color: $button-active-color;
+		border: none;
+	}
+
+	&.button--success {
+		background: $button-success-background;
+		color: $button-success-color;
+		border-bottom-color: darken($button-success-background, 10%);
+	}
+
+	&.button--error {
+		background: $button-error-background;
+		color: $button-error-color;
+		border-bottom-color: darken($button-error-background, 10%);
+	}
+
+	&.button--warning {
+		background: $button-warning-background;
+		color: $button-warning-color;
+		border-bottom-color: darken($button-warning-background, 10%);
+	}
+
+	&.button--extra-small {
+		font-size: 60%;
+	}
+
+	&.button--small {
+		font-size: 80%;
+	}
+
+	&.button--large {
+		font-size: 120%;
+	}
+
+	&.button--extra-large {
+		font-size: 140%;
+	}
+}

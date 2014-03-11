@@ -1,0 +1,49 @@
+@import "../config/colors.scss";
+
+/* ===========================================================================
+
+   |{}| Tables
+   
+   =========================================================================== */
+
+
+.table {
+	border: 1px solid $table-border-color;
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	td, th {
+		border-left: 1px solid $table-border-color;
+		overflow: visible;
+		padding: .4em .6em;
+	}
+	td:first-child, th:first-child {
+		border-left-width: 0;
+	}
+	thead {
+		vertical-align: top;
+		background: $table-thead-background;
+		text-align: left;
+	}
+
+	&.table--bordered {
+		tr {
+			border-bottom: 1px solid $table-border-color;
+		}
+	}
+
+	&.table--horizontal {
+		td, th {
+			border-left-width: 0;
+			border-bottom: 1px solid $table-border-color;
+		}
+	}
+
+	&.table--striped {
+		tbody {
+			tr:nth-child(odd) {
+				background: $table-stripped-background;
+			}
+		}
+	}
+}

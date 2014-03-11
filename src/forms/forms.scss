@@ -1,0 +1,129 @@
+@import "../config/colors.scss";
+
+/* ===========================================================================
+
+   |{}| Forms
+   
+   =========================================================================== */
+
+.form {
+	fieldset {
+		display: block;
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		[class *= 'grid-unit'] {
+			margin-bottom: 1em;
+		}
+		
+	}
+
+	input[type=text], input[type=email], input[type=password] {
+		display: block;
+		padding: .4em .6em;
+		border: none;
+		border: $input-border-size solid $input-border-color;
+		border-radius: .2em;
+		outline: none;
+	}
+
+	label {
+		display: block;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		font-size: .8em;
+	}
+
+	&.form--inline {
+		fieldset {
+			display: block;
+			margin: 0;
+			padding: 0;
+			border: none;
+
+			input[type=text], input[type=email], input[type=password] {
+				display: inline-block;
+				vertical-align: middle;
+				padding: .4em .6em;
+				border: none;
+				border: $input-border-size solid $input-border-color;
+				border-radius: .2em;
+				outline: none;
+			}
+
+			label {
+				font-size: .8em;	
+				color: #555;
+			}
+		}
+	}
+
+	&.form--aligned {
+		fieldset {
+			display: block;
+			margin: 0;
+			padding: 0;
+			border: none;
+
+			.form-group {
+				display: block;
+				width: 100%;
+				margin-bottom: 1em;
+
+				label {
+					display: inline-block;
+					vertical-align: middle;
+					width: 10em;
+					margin-right: 1.2em;
+					text-align: right;
+				}
+
+				input[type=text], input[type=email], input[type=password] {
+					display: inline-block;
+					vertical-align: middle;
+					padding: .4em .6em;
+					border: none;
+					border: $input-border-size solid $input-border-color;
+					border-radius: .2em;
+					outline: none;
+				}
+			}
+
+			.form-group-buttons {
+				display: block;
+				margin-left: 10em;
+
+				label {
+					display: block;
+					vertical-align: middle;
+				}
+
+				input[type=text], input[type=email], input[type=password] {
+					display: inline-block;
+					vertical-align: top;
+					padding: .4em .6em;
+					border: none;
+					border: $input-border-size solid $input-border-color;
+					border-radius: .2em;
+					outline: none;
+				}
+			}
+		}
+	}
+
+	input[required]:focus {
+		border: $input-border-size solid $input-required-border-color;
+	}
+
+	input[disabled] {
+		background: $input-disabled-background;
+		color: $input-disabled-color;
+		cursor: not-allowed;
+	}
+
+	input[readonly] {
+		background: $input-readonly-background;
+	}
+}
+	

@@ -1,0 +1,94 @@
+$white: rgba(251, 251, 251, 1);
+$black: rgba(30, 30, 30, 1);
+
+$blue: rgba(52, 152, 219, 1);
+$blue-dark: rgba(41, 128, 185, 1);
+
+$green: rgba(46, 204, 113, 1);
+$green-dark: rgba(39, 174, 96, 1);
+
+$yellow: rgba(241, 196, 15, 1);
+$yellow-dark: rgba(243, 156, 18, 1);
+
+$purple: rgba(155, 89, 182, 1);
+$purple-dark: rgba(142, 68, 173, 1);
+
+$indigo: rgba(52, 73, 94, 1);
+$indigo-dark: rgba(44, 62, 80, 1);
+
+$orange: rgba(230, 126, 34, 1);
+$orange-dark: rgba(211, 84, 0, 1);
+
+$red: rgba(231, 76, 60, 1);
+$red-dark: rgba(192, 57, 43, 1);
+
+$silver: rgba(236, 240, 241, 1);
+$silver-dark: rgba(189, 195, 199, 1);
+
+$gray: rgba(149, 165, 166, 1);
+$gray-dark: rgba(127, 140, 141, 1);
+
+
+// UI
+
+// Buttons
+
+$button-background: $silver;
+$button-color: $black;
+
+$button-disabled-background: darken($white, 10%);
+$button-disabled-color: darken($white, 20%);
+
+$button-active-background: darken($silver, 10%);
+$button-active-color: $black;
+
+$button-success-background: $green;
+$button-success-color: $white;
+
+$button-error-background: $red;
+$button-error-color: $white;
+
+$button-warning-background: $yellow;
+$button-warning-color: $black;
+
+
+
+// Input borders
+
+$input-border-size: 1px;
+$input-border-color: $gray;
+$input-required-border-color: $red;
+$input-disabled-background: darken($white, 10%);
+$input-disabled-color: darken($white, 20%);
+$input-readonly-background: darken($white, 5%);
+
+
+// Tables
+
+$table-border-color: $gray;
+$table-thead-background: $silver;
+$table-stripped-background: lighten($silver, 3%);
+
+
+// Menus
+
+$menu-heading-color: $gray;
+$menu-link-color: $black;
+$menu-link-hover-background: $silver;
+$menu-link-active-background: $silver-dark;
+$menu-border-color: $gray;
+
+
+// Messages
+
+$message-background: $blue;
+$message-border-color: darken($blue, 2%);
+
+$message-success-background: $green;
+$message-success-border-color: darken($green, 2%);
+
+$message-error-background: $red;
+$message-error-border-color: darken($red, 2%);
+
+$message-warning-background: $yellow;
+$message-warning-border-color: darken($yellow, 2%);

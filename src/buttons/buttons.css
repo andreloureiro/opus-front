@@ -1,0 +1,60 @@
+/* ===========================================================================
+
+   |{}| Buttons
+   
+   =========================================================================== */
+.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: .4em 1em;
+  background: #ecf0f1;
+  border: none;
+  border-top: 0px solid transparent;
+  border-bottom: 2px solid #cfd9db;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: 400;
+  outline: none;
+}
+.button:active {
+  border-top: 2px solid transparent;
+  border-bottom: 0px;
+}
+.button.button--disabled {
+  background: #e2e2e2;
+  color: #c8c8c8;
+  border: none;
+  cursor: not-allowed;
+}
+.button.button--active {
+  background: #cfd9db;
+  color: #1e1e1e;
+  border: none;
+}
+.button.button--success {
+  background: #2ecc71;
+  color: #fbfbfb;
+  border-bottom-color: #25a25a;
+}
+.button.button--error {
+  background: #e74c3c;
+  color: #fbfbfb;
+  border-bottom-color: #d62c1a;
+}
+.button.button--warning {
+  background: #f1c40f;
+  color: #1e1e1e;
+  border-bottom-color: #c29d0b;
+}
+.button.button--extra-small {
+  font-size: 60%;
+}
+.button.button--small {
+  font-size: 80%;
+}
+.button.button--large {
+  font-size: 120%;
+}
+.button.button--extra-large {
+  font-size: 140%;
+}

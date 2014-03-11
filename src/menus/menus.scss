@@ -1,0 +1,97 @@
+@import "../config/colors.scss";
+
+/* ===========================================================================
+
+   |{}| Menus
+   
+   =========================================================================== */
+
+.menu {
+
+	.heading {
+		display: inline-block;
+		padding: .6em .8em;
+		margin: 0;
+		text-transform: uppercase;
+		font-size: .8em;
+		color: $menu-heading-color;
+	}
+
+	ul {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		zoom: 1;
+
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: -4px;
+			list-style-type: none;
+			&:first-child {
+				margin-left: 0;
+			}
+
+			a {
+				display: block;
+				padding: .6em .8em;
+				text-decoration: none;
+				color: $menu-link-color;
+				&:hover {
+					background: $menu-link-hover-background;
+				}
+				&.active {
+					background: $menu-link-active-background;
+				}
+			}
+		}
+	}
+
+	&.menu--bordered {
+		display: inline-block;
+		border: 1px solid $menu-border-color;
+	}
+}
+
+.menu--vertical {
+	display: inline-block;
+
+	.heading {
+		display: block;
+		padding: .6em .8em;
+		margin: 0;
+		text-transform: uppercase;
+		font-size: .8em;
+		color: $menu-heading-color;
+		text-decoration: none;
+		border-bottom: 1px solid $menu-border-color;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: block;
+			list-style-type: none;
+
+			a {
+				display: block;
+				padding: .6em .8em;
+				text-decoration: none;
+				color: $menu-link-color;
+				&:hover {
+					background: $menu-link-hover-background;
+				}
+				&.active {
+					background: $menu-link-active-background;
+				}
+			}
+		}
+	}
+
+	&.menu--vertical-bordered {
+		display: inline-block;
+		border: 1px solid $menu-border-color;
+	}
+}

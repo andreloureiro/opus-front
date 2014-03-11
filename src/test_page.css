@@ -1,0 +1,12 @@
+.container {
+	width: 900px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.grid-test [class *= 'grid-unit'] {
+	height: 50px;
+	margin-bottom: 10px;
+	background: #eee;
+	text-align: center;
+}

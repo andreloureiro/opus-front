@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/opus-front.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+
+      {% include header.html %}
+
+      <div class="container">
+        
+        <div class="grid">
+          <div class="grid-unit-1-5">
+            <nav class="menu--vertical menu--vertical-bordered menu-content">
+              <ul>
+                <li>
+                  <p href="#" class="heading">Seções</p>
+                </li>
+                {% for item in site.data.menu %}
+                <li>
+                  <a href="{{ item.url }}" class="{% if item.title == page.class %}{{ "active" }}{% endif %}">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </nav>
+          </div>
+
+          <div class="grid-unit-4-5 content">
+
+            {{ content }}
+
+          </div>
+        </div>
+
+      </div>
+
+    <script src="js/script.js"></script>
+        
+    </body>
+</html>
