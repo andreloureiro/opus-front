@@ -4,23 +4,7 @@ title: Opus Front
 class: Home
 ---
 
-<<<<<<< HEAD
 <a href="https://raw.githubusercontent.com/andreloureiro/opus-front/master/build/opus-front.min.css" class="download-all" download="opus-front.min.css">DOWNLOAD OPUS-FRONT.MIN.CSS</a>
-=======
-<div class="graph">
-    <h2 class="title">Tamanho Total</h2>
-    <h2 class="total"></h2>
-    <div class="chart">
-        <div class="base"></div>
-        <div class="grid"></div>
-        <div class="buttons"></div>
-        <div class="tables"></div>
-        <div class="forms"></div>
-        <div class="messages"></div>
-        <div class="menus"></div>
-    </div>
-</div>
->>>>>>> 6637d4c958af2394106809cf5d24b9ea72f3d2fc
 
 <br>
 
