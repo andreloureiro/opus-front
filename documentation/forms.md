@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Forms - Opus Front
+title: Forms Opus Front
 class: Forms
 ---
 
