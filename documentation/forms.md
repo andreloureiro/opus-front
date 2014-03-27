@@ -6,11 +6,11 @@ class: Forms
 
 ## Forms
 
-O __Opus Front__ possui diferentes formatos de formulário já definidos para serem aplicados a diversos casos de uso.
+O __Opus Front__ possui diferentes formatos de formulÃ¡rio jÃ¡ definidos para serem aplicados a diversos casos de uso.
 
 <br>
 
-### Formulário Vertical
+### FormulÃ¡rio Vertical
 
 <form action="#" class="form">
     <fieldset>
@@ -38,7 +38,7 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
 
 <br>
 
-### Formulário Horizontal
+### FormulÃ¡rio Horizontal
 
 <form action="#" class="form form--inline">
     <fieldset>
@@ -68,7 +68,7 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
 
 <br>
 
-### Formulário Alinhado
+### FormulÃ¡rio Alinhado
 
 <form action="#" class="form form--aligned">
     <fieldset>
@@ -77,7 +77,7 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
             <input type="text" id="name">
         </div>
         <div class="form-group">
-            <label for="address">Endereço</label>
+            <label for="address">EndereÃ§o</label>
             <input type="text" id="adress">
         </div>
         <div class="form-group">
@@ -90,7 +90,7 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
         </div>
         <div class="form-group-buttons">
             <label for="accept-inline">
-                <input type="checkbox" id="accept-inline"> Li e aceito os termos de serviços
+                <input type="checkbox" id="accept-inline"> Li e aceito os termos de serviÃ§os
             </label>
             <button type="submit" class="button">Enviar</button>
         </div>
@@ -105,7 +105,7 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
             <input type="text" id="name">
         </div>
         <div class="form-group">
-            <label for="address">Endereço</label>
+            <label for="address">EndereÃ§o</label>
             <input type="text" id="adress">
         </div>
         <div class="form-group">
@@ -118,7 +118,7 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
         </div>
         <div class="form-group-buttons">
             <label for="accept">
-                <input type="checkbox"> Li e aceito os termos de serviços
+                <input type="checkbox"> Li e aceito os termos de serviÃ§os
             </label>
             <button type="submit" class="button">Enviar</button>
         </div>
@@ -128,7 +128,7 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
 
 <br>
 
-### Formulário Multi-Coluna
+### FormulÃ¡rio Multi-Coluna
 
 <form action="#" class="form">
     <fieldset>
@@ -155,7 +155,7 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
             </div>
             <div class="grid-unit-1-3">
                 <label for="accept">
-                    <input type="checkbox" id="accept"> Li e aceito os termos de serviço
+                    <input type="checkbox" id="accept"> Li e aceito os termos de serviÃ§o
                 </label>
                 <button type="submit" class="button">Enviar</button>
             </div>
@@ -189,7 +189,7 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
             </div>
             <div class="grid-unit-1-3">
                 <label for="accept">
-                    <input type="checkbox" id="accept"> Li e aceito os termos de serviço
+                    <input type="checkbox" id="accept"> Li e aceito os termos de serviÃ§o
                 </label>
                 <button type="submit" class="button">Enviar</button>
             </div>
@@ -202,19 +202,19 @@ O __Opus Front__ possui diferentes formatos de formulário já definidos para se
 
 ## Inputs
 
-Além dos formulários, o __Opus Front__ trás três tipos diferentes de estilos para inputs. Basta apenas acrescentar o atributo desejado:
+AlÃ©m dos formulÃ¡rios, o __Opus Front__ trÃ¡s trÃªs tipos diferentes de estilos para inputs. Basta apenas acrescentar o atributo desejado:
 
 <br>
 
-### Input obrigatório
+### Input obrigatÃ³rio
 
 <form action="#" class="form">
-    <input type="text" placeholder="Este é um input obrigatório" required>
+    <input type="text" placeholder="Este Ã© um input obrigatÃ³rio" required>
 </form>
 
 {% highlight html linenos=table %}
 <form action="#" class="form">
-    <input type="text" placeholder="Este é um input obrigatório" required>
+    <input type="text" placeholder="Este Ã© um input obrigatÃ³rio" required>
 </form>
 {% endhighlight %}
 
@@ -223,12 +223,12 @@ Além dos formulários, o __Opus Front__ trás três tipos diferentes de estilos
 ### Input desabilitado
 
 <form action="#" class="form">
-    <input type="text" placeholder="Este é um input desabilitado" disabled>
+    <input type="text" placeholder="Este Ã© um input desabilitado" disabled>
 </form>
 
 {% highlight html linenos=table %}
 <form action="#" class="form">
-    <input type="text" placeholder="Este é um input desabilitado" disabled>
+    <input type="text" placeholder="Este Ã© um input desabilitado" disabled>
 </form>
 {% endhighlight %}
 
@@ -237,13 +237,12 @@ Além dos formulários, o __Opus Front__ trás três tipos diferentes de estilos
 ### Input somente leitura
 
 <form action="#" class="form">
-    <input type="text" value="Este é um input somente leitura" readonly>
+    <input type="text" value="Este Ã© um input somente leitura" readonly>
 </form>
 
 {% highlight html linenos=table %}
 <form action="#" class="form">
-    <input type="text" value="Este é um input somente leitura" readonly>
+    <input type="text" value="Este Ã© um input somente leitura" readonly>
 </form>
 {% endhighlight %}
-
 
