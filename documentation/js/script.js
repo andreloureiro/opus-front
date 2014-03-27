@@ -1,6 +1,10 @@
 (function(document, undefined){
   'use strict';
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 6637d4c958af2394106809cf5d24b9ea72f3d2fc
   var itemGraph = [{
     name: 'base',
     value: 0.94
@@ -23,6 +27,10 @@
     name: 'messages',
     value: 1.02
   }];
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 6637d4c958af2394106809cf5d24b9ea72f3d2fc
 
   var package = 2.60;
 

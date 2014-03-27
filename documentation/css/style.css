@@ -474,6 +474,7 @@ p code {
 .open-sans-condensed .light-italic {
   font-weight: 300;
   font-style: italic;
+
 }
 
 .download-all {
@@ -494,5 +495,5 @@ p code {
 
 .download-all:active {
   border-top: 5px solid transparent;
-  border-bottom: 0px solid rgba(131, 16, 10, 1);  
+  border-bottom: 0px solid rgba(131, 16, 10, 1);
 }
